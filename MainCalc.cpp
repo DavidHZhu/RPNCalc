@@ -1,33 +1,33 @@
-/*****************************************************************************
- *	Name:   David Zhu                                                        *
- *	Course: ICS4U                                                            *  
- *	Date: March 24th, 2017	                   		                         * 
- *	                                                                         * 
- *	Purpose: Reverse Polish Notation Calculator		      				 	 *
- *	                                                                         *
- *	Usage: 	Performs basic calculator functions in post-fix, using stacks and*
- 			classes.														 *
-			Process:														 *
-			1. Takes input, adds onto stack - repeat						 *
-			2. On an operator, call function to perform method; returns 0	 *
-				on successful and push(pop) answer onto stack, returns 		 *
-				specific error otherwise									 *
-			3. Print out answer with getTop()								 *
-			4. (Graphics) With GUI, have user inputs added to seperate box	 *
-				displaying the stack. Message box for Stack clear or errors	 *
- *	       														    		 *    
- *	                                                                         *
- *	Revision History:	header and definition finished. 					 *
- 					   	operations work, added check isValid for 2 elements  *
-					    the stack.											 *
-						Changed bool methods to int, clearer errors			 *
-					    Fixed Negative numbers.								 *
-						Added GUI.txt										 *
-						Formatting Changes				                   	 *  
- *	                                                                         *
- *	Known Issues: edit printStack, not efficient						     *
- *	                                                                         *  
- *****************************************************************************/
+/***********************************************************************************************************************
+ *	Name:   David Zhu                                                        
+ *	Course: ICS4U                                                              
+ *	Date: March 24th, 2017	                   		                          
+ *	                                                                          
+ *	Purpose: Reverse Polish Notation Calculator		      				 	 
+ *	                                                                         
+ *	Usage: 	Performs basic calculator functions in post-fix, using stacks and
+ *			classes.														 *
+ *			Process:														 *
+ *			1. Takes input, adds onto stack - repeat						 
+ *			2. On an operator, call function to perform method; returns 0	 
+ *				on successful and push(pop) answer onto stack, returns 		 
+ *				specific error otherwise									 
+ *			3. Print out answer with getTop()								 
+ *			4. (Graphics) With GUI, have user inputs added to seperate box	 
+ *				displaying the stack. Message box for Stack clear or errors	 
+ *	       														    		     
+ *	                                                                         
+ *	Revision History:	- Header and definition finished. 					 
+ *				operations work, added check isValid for 2 elements  
+ *				the stack.											 
+ *				- Changed bool methods to int, clearer errors			 
+ *				- Fixed Negative numbers.								 
+ *				- Added GUI.txt										 
+ *				- Formatting Changes				                   	   
+ *	                                                                         
+ *	Known Issues: edit printStack, not efficient						     
+ *	                                                                           
+ *************************************************************************************************************************/
  
  #include <iostream>
  #include <fstream>
